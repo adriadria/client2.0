@@ -6,7 +6,6 @@ import PopContainer from '../PopContainer';
 import EditDataComponent from './EditDataComponent';
 import ShowData from './ShowData';
 import Swal from 'sweetalert2'
-import { updateUserData } from '../../../ApiReq/users';
 import { useDispatch, useSelector } from 'react-redux'
 import { putUser } from '../../../Controllers/actions/userActions';
 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import AddPostComponent from '../PersonalDashboards/AddPostComponent'
 import PersonalDashboardContainer from '../PersonalDashboards/PersonalDashboardContainer'
 import PersonalInformationContainer from '../PersonalDashboards/PersonalInformationContainer'
 import PersonalTaskComponent from '../PersonalDashboards/PersonalTaskComponent'
@@ -12,8 +11,6 @@ import Review from '../PersonalDashboards/Review'
 
 function UserDashboard({userData}) {
     
-    const [tip, setTip] = useState(false)
-
     const [userInfo, setUserInfo] = useState('personalInfo')
     
     const [scheduleFlag, setScheduleFlag] = useState(false)

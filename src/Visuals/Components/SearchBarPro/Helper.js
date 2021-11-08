@@ -1,5 +1,5 @@
 export function Filter(obj,arr){
-    const {name,profesion, country, min,max, likes} = obj
+    const {name,profesion, country, likes} = obj
     
     if(name){
         let nameResult = name.split(' ').map(e => e.charAt(0).toUpperCase() + e.slice(1)).join( ' ');

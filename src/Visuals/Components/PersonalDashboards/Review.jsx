@@ -13,7 +13,7 @@ export default function Review({userId}){
         .then(r=>{
             setReview(r)
         })
-    },[])
+    },[userId])
 
     function changePopUp(e){
         setPopUp(state=> state ? false : true)
