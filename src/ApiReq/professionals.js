@@ -6,7 +6,7 @@ export function getProfessionals(featured){
     .then(r=>r.data.map(u=>{
         return {...u,fullname:u.name+' '+u.lastname}
     }))
-    .catch(r=>r.response.data);
+    .catch(e => e);
 }
 
 export function getProfessionalByUsername(username){

@@ -45,8 +45,7 @@ function LoginFormComponents({handleFields, logIn, tagUser, tagPass, UserCanLog,
     }
 
     const LogError = useSelector(state =>  state.sessionReducer.status.error)
-    console.log(LogError)
-
+ 
     return (
         <div className='flex flex-col p-10 h-96 justify-around'>
             <LoginInputComponent    handleChange={handleFields} 

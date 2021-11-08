@@ -127,13 +127,10 @@ function LoginComponentsContainer() {
     }
 
     const UserLog = useSelector(state=> state.sessionReducer.status)
-    console.log(UserLog)
     const checkLog=()=>{
         if(!UserLog.error && UserLog.token.length){
-            console.log('NO TENGO ERROR')
             setShowErrorText(false)
         }else if(UserLog.error){
-            console.log('SI TENGO ERROR')
             setShowErrorText(true)
             setUserCanLog(true)
             setPassError(true)
